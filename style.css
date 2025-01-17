@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* background  */
+body{
+    background-color: #000000;
+}
+body > div:nth-child(1){
+    position: absolute;
+    width: 100%;
+    
+}
+
+body > div:nth-child(1) > img:nth-child(1){
+    width: 90%;
+    position: fixed;
+    top: 15%;
+    left: 5%;
+    opacity: 0.1;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    animation: spin 29s linear infinite;
+    z-index: -2;
+    
+}
+body >div:nth-child(1)> img:nth-child(2){
+    position: fixed;
+    width: 60%;
+    left: -30%;
+    top: 32%;
+    opacity: 0.1;
+    transition: transform 5s linear;
+    z-index: -2;
+}
+body > div:nth-child(1) > img:nth-child(3){
+    position: fixed;
+    width: 36%;
+    top: -8%;
+    right: -14%;
+    opacity: 0.1;
+    transition: transform 5s linear;
+    z-index: -2;
+}
+body > div:nth-child(1) > img:nth-child(4){
+    position: fixed;
+    width: 45%;
+    right: -16%;
+    bottom: -8%;
+    opacity: 0.1;
+    transition: transform 5s linear;
+    z-index: -2;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+section{
+    height: 2000px;
+}
+
+
+
+/* navigation */
+.lines{
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    
+}
+.lines > img{
+    width: 60px;
+    margin: 15px 10px;
+}
+
+.lines > div{
+    position: relative;
+    height: inherit;
+    background-color: #1F2937;
+    display: none;
+}
+.lines > div > nav > ul{
+    color: #ffffff;
+    font-family: "Inter", serif;
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+}
+.lines > div > nav > ul > li{
+    list-style: none;
+}
+.lines > div > nav > ul > li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.lines > div > nav > ul > li a:hover{
+    border: 1px solid #374151 ;
+    background-color: #374151;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+/* home page main */
+.main{
+    font-family: "Flick", sans-serif;
+}
+.main > h3:nth-child(1){
+    color: #FBBA33;
+    font-size: 55px;
+}
+.main > div:nth-child(2) > img{
+    width: 35%;
+}
+.main > h3:nth-child(3){
+    color: #FBBA33;
+    font-size: 32px;
+}
+.main > a{
+    padding: 15px 50px;
+    border: solid #FBBA33 1px;
+    border-radius: 40px;
+    color: #FBBA33;
+    text-decoration: none;
+    font-size: 32px;
+    display: inline-block;
+    animation: events 2s infinite;
+}
+@keyframes events {
+    0% {
+      box-shadow: 0 0 5px #FBBA33;
+    }
+    50% {
+      box-shadow: 0 0 20px #FBBA33;
+    }
+    100% {
+      box-shadow: 0 0 5px #FBBA33;
+    }
+  }
+  
+  .time{
+    color: #FFFFFF;
+    font-family: "Seven Segment";
+    display: inline-block;
+  }
+  .time >div >  span:nth-child(1) {
+    font-size: 32px;
+  }
+  .time > div > span:nth-child(2){
+    font-size: 16px;
+  }
+  .time div{
+    border: solid #00FFFF 1px;
+    border-radius: 20px;
+    width: 80px;
+    padding: 10px 40px;
+    animation: time 2s infinite;
+    
+  }
+  @keyframes time {
+    0% {
+      box-shadow: 0 0 5px #00FFFF;
+    }
+    50% {
+      box-shadow: 0 0 20px #00FFFF;
+    }
+    100% {
+      box-shadow: 0 0 5px #00FFFF;
+    }
+  }
+
+  /* about starts */
+  .about div{
+    border: solid #00FFFF 1px;
+    border-radius: 16px;
+    animation: time 2s infinite;
+    margin-top: 80px;
+    padding: 30px;
+    background-color: rgba(0, 255, 255, 10%);
+   
+  }
+  .about div > h3{
+    font-size: 24px;
+    color: #FFFFFF;
+  }
+  .about div > p{
+    font-family: "Inter", serif;
+    color: #FFFFFF;
+    /* font-size: 16px; */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    body > div:nth-child(1) > img:nth-child(1){
+        width: 50%;
+        top: 5%;
+        left: 26%;
+    }
+    body > div:nth-child(1) > img:nth-child(2){
+        width: 30%;
+        left: -16%;
+        top: 24%;
+    }
+    body > div:nth-child(1) > img:nth-child(3){
+        position: fixed;
+        width: 32%;
+        top: -23%;
+        right: -13%;
+    }
+    body > div:nth-child(1)> img:nth-child(4){
+        position: fixed;
+        width: 30%;
+        right: -13%;
+        bottom: -23%;
+    }
+  }
