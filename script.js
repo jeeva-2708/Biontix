@@ -34,7 +34,7 @@ cross.addEventListener("click", ()=>{
 // time
 function updateTime() {
    
-    const targetDate = new Date('2025-01-17T23:59:59'); // Set your target date here
+    const targetDate = new Date('2025-01-20T23:59:59'); // Set your target date here
     const now = new Date();
     const timeDifference = targetDate - now;
 
