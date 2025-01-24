@@ -116,18 +116,18 @@ body > div:nth-child(3) > div{
 }
 body > div:nth-child(3) > div > div{
     position: relative;
-    
+    width: 265px;
 }
 body > div:nth-child(3) > div > div > div{
     color: #FFFFFF;
-    width: 100%;
+   
     position: absolute;
-    
+    width: 100%;
     bottom: 0;
 }
 body > div:nth-child(3) > div > div > div > h3{
     margin-bottom: 0;
-    font-size: 16px;
+    font-size: 20px;
 }
 body > div:nth-child(3) > div > div > div > hr{
     border: #FFFFFF solid 1px;
@@ -141,8 +141,8 @@ body > div:nth-child(3) > div > div > div > hr{
     bottom: 0;
 } */
 body > div:nth-child(3) > div > div > img{
-    width: 200px;
-    height: 200px;
+    width: 265px;
+    height: 265px;
 }
 
 @media screen and (min-width: 768px) {
@@ -177,14 +177,6 @@ body > div:nth-child(3) > div > div > img{
     body > div:nth-child(3) > h3{
         font-size: 48px;
     }
-    body > div:nth-child(3) > div > div > img{
-        width: 285px;
-        height: 285px;
-    }
-    body > div:nth-child(3) > div > div > div > h3{
-        
-        font-size: 20px;
-    }
     footer > div > div:nth-child(1) > h3{
         font-size: 24px;
     }
@@ -208,7 +200,7 @@ footer > div > div:nth-child(1) > img{
 }
 footer > div > div:nth-child(1) > h3{
     font-family: "Georgia", sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     margin-bottom: 0;
 }
 /* footer > div > div:nth-child(2) {
