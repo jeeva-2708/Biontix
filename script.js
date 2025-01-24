@@ -1,11 +1,8 @@
 const navi = document.getElementById("navi");
 const list = document.getElementById("list");
 const cross = document.getElementById("cross");
+const sec = document.getElementById("sec");
 const times = document.querySelectorAll(".times");
-
-
-
-
 
 window.addEventListener('scroll', function() {
     const image = document.querySelectorAll('.img1');
@@ -23,11 +20,13 @@ navi.addEventListener("click", ()=>{
 navi.addEventListener("click", ()=>{
     list.style.display="block";
     navi.style.display="none";
-   
-    console.log("hello")
 })
 cross.addEventListener("click", ()=>{
     list.style.display="none"
+    navi.style.display="block"
+})
+sec.addEventListener("click", ()=>{
+     list.style.display="none"
     navi.style.display="block"
 })
 

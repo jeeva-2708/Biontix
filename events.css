@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* background  */
+body{
+    background-color: #000000;
+    font-family: "Flick", sans-serif;
+    
+}
+
+body > div:nth-child(1) > img:nth-child(1){
+    width: 90%;
+    position: fixed;
+    top: 26%;
+    left: 5%;
+    opacity: 0.1;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    animation: spin 29s linear infinite;
+    z-index: -2;
+    
+}
+body >div:nth-child(1)> img:nth-child(2){
+  position: fixed;
+  width: 50%;
+  left: -30%;
+  top: 39%;
+  opacity: 0.4;
+  transition: transform 5s linear;
+  z-index: -2;
+}
+body > div:nth-child(1) > img:nth-child(3){
+  position: fixed;
+  width: 52%;
+  top: -12%;
+  right: -22%;
+  opacity: 0.4;
+  transition: transform 5s linear;
+  z-index: -2;;
+}
+body > div:nth-child(1) > img:nth-child(4){
+  position: fixed;
+  width: 90%;
+  right: -42%;
+  bottom: -25%;
+  opacity: 0.4;
+  transition: transform 5s linear;
+  z-index: -2;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* navigation */
+.lines{
+    position: fixed;
+    width: 40%;
+    height: 100vh;
+    z-index: 5;
+    
+}
+
+.lines > div:nth-child(1) > img{
+    position: fixed;
+    width: 60px;
+    margin: 15px 10px;
+}
+
+.lines > div:nth-child(2){
+    width: 100%;
+    height: inherit;
+    background-color: #1F2937;
+    display: none;
+}
+.lines > div:nth-child(2) > nav > ul{
+    color: #ffffff;
+    font-family: "Inter", serif;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+.lines > div:nth-child(2) > nav > ul > li{
+    list-style: none;
+}
+.lines > div:nth-child(2) > nav > ul > li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.lines >  div:nth-child(2) > nav > ul > li a:hover{
+    border: 2px solid #374151 ;
+    background-color: #374151;
+    border-radius: 5px;
+}
+#cross{
+  width: 55px;
+}
+/* main */
+
+body > div:nth-child(3){
+    height: 100vh;
+}
+body > div:nth-child(3) > h3{
+    color: #FFFFFF;
+    margin-bottom: 100px;
+}
+body > div:nth-child(3) > div{  
+    width: 100%;
+}
+body > div:nth-child(3) > div > div{
+    position: relative;
+    
+}
+body > div:nth-child(3) > div > div > div{
+    color: #FFFFFF;
+    width: 100%;
+    position: absolute;
+    
+    bottom: 0;
+}
+body > div:nth-child(3) > div > div > div > h3{
+    margin-bottom: 0;
+    font-size: 16px;
+}
+body > div:nth-child(3) > div > div > div > hr{
+    border: #FFFFFF solid 1px;
+    opacity: 1;
+    margin: 0 0;
+    
+
+}
+/* body > div:nth-child(2) > div > div > div{
+    position: absolute;
+    bottom: 0;
+} */
+body > div:nth-child(3) > div > div > img{
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+    body > div:nth-child(1) > img:nth-child(1){
+        width: 50%;
+        top: 5%;
+        left: 26%;
+    }
+    body > div:nth-child(1) > img:nth-child(2){
+        width: 30%;
+        left: -16%;
+        top: 24%;
+    }
+    body > div:nth-child(1) > img:nth-child(3){
+        position: fixed;
+        width: 32%;
+        top: -23%;
+        right: -13%;
+    }
+    body > div:nth-child(1)> img:nth-child(4){
+        position: fixed;
+        width: 30%;
+        right: -13%;
+        bottom: -23%;
+    }
+    .lines{
+        width: 20%;  
+    }
+    .lines > div > nav > ul{
+      font-size: 18px !important;
+    }
+    body > div:nth-child(3) > h3{
+        font-size: 48px;
+    }
+    body > div:nth-child(3) > div > div > img{
+        width: 285px;
+        height: 285px;
+    }
+    body > div:nth-child(3) > div > div > div > h3{
+        
+        font-size: 20px;
+    }
+    footer > div > div:nth-child(1) > h3{
+        font-size: 24px;
+    }
+    footer > div > div:nth-child(2) > a > i{
+        font-size: 30px;
+    }
+    footer > div > div:nth-child(1) > img{
+       
+        width: 140px !important;
+    }
+}
+
+/* footer starts */
+footer > div {
+    color: #fff;
+}
+footer > div > div:nth-child(1) > img{
+    border-right: 1px solid #ffffff ;
+    margin-right: 10px;
+    width: 100px;
+}
+footer > div > div:nth-child(1) > h3{
+    font-family: "Georgia", sans-serif;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+/* footer > div > div:nth-child(2) {
+    width: 20%;
+} */
+footer > div > div:nth-child(2) > a > i{
+    font-size: 20px;
+    display: inline-block;
+}
