@@ -8,6 +8,7 @@ body{
     background-color: #000000;
     font-family: "Flick", sans-serif;
     
+    
 }
 
 body > div:nth-child(1) > img:nth-child(1){
@@ -102,51 +103,64 @@ body > div:nth-child(1) > img:nth-child(4){
 #cross{
   width: 55px;
 }
-/* main */
+
+/*events details starts */
 
 body > div:nth-child(3){
-    height: 100vh;
+  height: 100vh;
 }
-body > div:nth-child(3) > h3{
-    color: #FFFFFF;
-    margin-bottom: 100px;
+body > div:nth-child(3) > div > div {
+    color: #ffffff;
+    font-family: "Inter", serif;
+   
 }
-body > div:nth-child(3) > div{  
-    width: 100%;
-}
-body > div:nth-child(3) > div > div{
-    position: relative;
-    width: 265px;
+body > div:nth-child(3) > div> div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(31,41,55,100%);
+    
+    height: 700px;
+    overflow-y: auto;
+    
     
 }
-body > div:nth-child(3) > div > div > div{
-    color: #FFFFFF;
-   
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+body > div:nth-child(3) > div > div > div:nth-child(1) {
+    padding: 20px 20px 0px 20px;
 }
-body > div:nth-child(3) > div > div > div > h3{
-    margin-bottom: 0;
+body > div:nth-child(3) > div > img{
+    width: 356px;
+    height: 504px;
+    display: none;
+}
+body > div:nth-child(3) > div > div > div:nth-child(2){
+    position: sticky;
+    bottom: 0;
+    height: 70px;
+    background-color: #1F2937;
+}
+body > div:nth-child(3) > div > div > div > a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Flick", sans-serif;
+    border: 1px solid #00FFFF;
+    padding: 10px 20px;
     font-size: 20px;
+    border-radius: 16px;
+    animation: time 2s infinite;
 }
-body > div:nth-child(3) > div > div > div > hr{
-    border: #FFFFFF solid 1px;
-    opacity: 1;
-    margin: 0 0;
-    width: 100%;
-}
-/* body > div:nth-child(2) > div > div > div{
-    position: absolute;
-    bottom: 0;
-} */
-body > div:nth-child(3) > div > div > img{
-    width: 265px;
-    height: 265px;
-}
-/* #over-one{
-    transition: font-size 0.5s linear;
-} */
+@keyframes time {
+    0% {
+      box-shadow: 0 0 5px #00FFFF;
+    }
+    50% {
+      box-shadow: 0 0 20px #00FFFF;
+    }
+    100% {
+      box-shadow: 0 0 5px #00FFFF;
+    }
+  }
+
 
 @media screen and (min-width: 768px) {
     body > div:nth-child(1) > img:nth-child(1){
@@ -179,6 +193,12 @@ body > div:nth-child(3) > div > div > img{
     }
     body > div:nth-child(3) > h3{
         font-size: 48px;
+    }
+    body > div:nth-child(3) > div > img{
+        display: block;
+    }
+    body > div:nth-child(3) > div> div{
+        height: 500px;
     }
     footer > div > div:nth-child(1) > h3{
         font-size: 24px;

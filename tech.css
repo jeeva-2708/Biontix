@@ -8,6 +8,7 @@ body{
     background-color: #000000;
     font-family: "Flick", sans-serif;
     
+    
 }
 
 body > div:nth-child(1) > img:nth-child(1){
@@ -102,51 +103,13 @@ body > div:nth-child(1) > img:nth-child(4){
 #cross{
   width: 55px;
 }
-/* main */
 
-body > div:nth-child(3){
-    height: 100vh;
-}
+/* posters starts */
+
 body > div:nth-child(3) > h3{
-    color: #FFFFFF;
-    margin-bottom: 100px;
+    color: #ffff;
 }
-body > div:nth-child(3) > div{  
-    width: 100%;
-}
-body > div:nth-child(3) > div > div{
-    position: relative;
-    width: 265px;
-    
-}
-body > div:nth-child(3) > div > div > div{
-    color: #FFFFFF;
-   
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
-body > div:nth-child(3) > div > div > div > h3{
-    margin-bottom: 0;
-    font-size: 20px;
-}
-body > div:nth-child(3) > div > div > div > hr{
-    border: #FFFFFF solid 1px;
-    opacity: 1;
-    margin: 0 0;
-    width: 100%;
-}
-/* body > div:nth-child(2) > div > div > div{
-    position: absolute;
-    bottom: 0;
-} */
-body > div:nth-child(3) > div > div > img{
-    width: 265px;
-    height: 265px;
-}
-/* #over-one{
-    transition: font-size 0.5s linear;
-} */
+
 
 @media screen and (min-width: 768px) {
     body > div:nth-child(1) > img:nth-child(1){
