@@ -12,45 +12,54 @@ body{
 }
 
 body > div:nth-child(1) > img:nth-child(1){
-    width: 90%;
-    position: fixed;
-    top: 26%;
-    left: 5%;
-    opacity: 0.1;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    height: auto;
     animation: spin 29s linear infinite;
     z-index: -2;
-    
+    position: fixed;
+    top: 0%;
+    left: -0%;
+    transform: none;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.2;
+    object-fit: contain;
+    will-change: transform;
 }
 body >div:nth-child(1)> img:nth-child(2){
-  position: fixed;
-  width: 50%;
-  left: -30%;
-  top: 39%;
-  opacity: 0.4;
-  transition: transform 5s linear;
-  z-index: -2;
+        position: fixed;
+        top: 8%;
+        left: -46%;
+        transition: transform 5s linear;
+        z-index: -1;
+        width: 90vw;
+        height: 90vh;
+        opacity: 0.3;
+        object-fit: contain;
+       
 }
 body > div:nth-child(1) > img:nth-child(3){
-  position: fixed;
-  width: 52%;
-  top: -12%;
-  right: -22%;
-  opacity: 0.4;
-  transition: transform 5s linear;
-  z-index: -2;;
+    position: fixed;
+    top: -25%;
+    right: -25%;
+    transition: transform 5s linear;
+    z-index: -1;
+    width: 50vw;
+    height: 50vh;
+    opacity: 0.3;
+    object-fit: contain;
+   
 }
 body > div:nth-child(1) > img:nth-child(4){
-  position: fixed;
-  width: 90%;
-  right: -42%;
-  bottom: -25%;
-  opacity: 0.4;
-  transition: transform 5s linear;
-  z-index: -2;
+    position: fixed;
+    bottom: -50%;
+    right: -50%;
+    transition: transform 5s linear;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.3;
+    object-fit: contain;
+    
 }
 @keyframes spin {
     from {
@@ -112,28 +121,6 @@ body > div:nth-child(3) > h3{
 
 
 @media screen and (min-width: 768px) {
-    body > div:nth-child(1) > img:nth-child(1){
-        width: 50%;
-        top: 5%;
-        left: 26%;
-    }
-    body > div:nth-child(1) > img:nth-child(2){
-        width: 30%;
-        left: -16%;
-        top: 24%;
-    }
-    body > div:nth-child(1) > img:nth-child(3){
-        position: fixed;
-        width: 32%;
-        top: -23%;
-        right: -13%;
-    }
-    body > div:nth-child(1)> img:nth-child(4){
-        position: fixed;
-        width: 30%;
-        right: -13%;
-        bottom: -23%;
-    }
     .lines{
         width: 20%;  
     }
