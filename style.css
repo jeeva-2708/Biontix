@@ -12,6 +12,20 @@ body{
     width: 100%;
     
 } */
+@font-face {
+
+  font-family: 'Flick';
+  font-family: 'Seven Segment';
+
+  src: url('./fonts/Flick-Stamp-Demo.ttf') format('ttf'), 
+
+       url('./fonts/SevenSegment.ttf') format('ttf');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+}
 
 body > div:nth-child(1) > img:nth-child(1){
   animation: spin 29s linear infinite;
