@@ -94,7 +94,7 @@ body > div:nth-child(1) > img:nth-child(4){
 .lines{
     position: fixed;
     width: 40%;
-    height: 100vh;
+    
     
 }
 
@@ -106,10 +106,10 @@ body > div:nth-child(2) img{
 .lines > div{
   
     width: 100%;
-    height: 2000px;
+    height: 100vh;
     background-color: #1F2937;
     display: none;
-    z-index: 10;
+    
 }
 .lines > div > nav > ul{
     color: #ffffff;
@@ -306,7 +306,7 @@ body > div:nth-child(2) img{
       width: 20%;  
     }
     .lines > div > nav > ul{
-      font-size: 1rem;
+      font-size: 16px;
     }
     footer > div > div:nth-child(1) > h3{
       font-size: 24px;

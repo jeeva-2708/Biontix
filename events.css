@@ -80,7 +80,7 @@ body > div:nth-child(1) > img:nth-child(1){
     position: fixed;
     width: 40%;
     height: 100vh;
-    z-index: 5;
+    
     
 }
 
@@ -168,10 +168,10 @@ body > div:nth-child(3) > div > div > img{
 @media screen and (min-width: 768px) {
     .lines{
         width: 20%;  
-    }
-    .lines > div > nav > ul{
-      font-size: 18px !important;
-    }
+      }
+      .lines > div > nav > ul{
+        font-size: 16px !important;
+      }
     body > div:nth-child(3) > h3{
         font-size: 48px;
     }

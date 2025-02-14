@@ -81,7 +81,7 @@ body > div:nth-child(1) > img:nth-child(1){
     position: fixed;
     width: 40%;
     height: 100vh;
-    z-index: 5;
+    
     
 }
 
@@ -166,20 +166,21 @@ body > div:nth-child(1) > img:nth-child(1){
     height: 98px;
   padding: 16px;
 }
-
-
+.student{
+  height: 60vh;
+}
 
 
 
 
 
 @media screen and (min-width: 768px) { 
-    .lines{
-      width: 20%;  
-    }
-    .lines > div > nav > ul{
-      font-size: 1rem;
-    }
+  .lines{
+    width: 20%;  
+  }
+  .lines > div > nav > ul{
+    font-size: 16px !important;
+  }
     .student > div {
       
       grid-template-columns: auto auto;
