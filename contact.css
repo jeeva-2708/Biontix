@@ -168,7 +168,7 @@ body > div:nth-child(1) > img:nth-child(1){
   padding: 16px;
 }
 .student{
-  height: 60vh;
+  height: 100vh;
 }
 
 
@@ -186,7 +186,10 @@ body > div:nth-child(1) > img:nth-child(1){
       
       grid-template-columns: auto auto;
     }
-
+    .student{
+      height: 60vh;
+    }
+    
 
 
     footer > div > div:nth-child(1) > h3{
