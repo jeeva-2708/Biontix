@@ -56,6 +56,7 @@ boxTwo.addEventListener("mouseout",()=>{
 navi.addEventListener("click", ()=>{
     list.style.display="block";
     navi.style.display="none";
+     list.style.height= "100vh"
 })
 navi.addEventListener("click", ()=>{
     list.style.display="block";

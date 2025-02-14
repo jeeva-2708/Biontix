@@ -80,7 +80,8 @@ body > div:nth-child(1) > img:nth-child(1){
 .lines{
     position: fixed;
     width: 40%;
-    height: 100vh;
+    height: 0px;
+    z-index: 5;
    
     
 }
@@ -132,7 +133,7 @@ body > div:nth-child(1) > img:nth-child(1){
     background-color: rgba(0, 0, 0, 50.2%);
     padding: 20px;
 }
-li{
+section > div > div > ol > li{
   font-size: 20px;
 }
 
@@ -144,7 +145,7 @@ li{
   .lines{
     width: 20%;  
   }
-  .lines > div > nav > ul{
+  .lines > div:nth-child(2) > nav > ul{
     font-size: 16px !important;
   }
     footer > div > div:nth-child(1) > h3{

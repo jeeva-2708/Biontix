@@ -94,7 +94,7 @@ body > div:nth-child(1) > img:nth-child(4){
 .lines{
     position: fixed;
     width: 40%;
-    
+    z-index: 5;
     
 }
 
@@ -106,7 +106,7 @@ body > div:nth-child(2) img{
 .lines > div{
   
     width: 100%;
-    height: 100vh;
+    height: 0px;
     background-color: #1F2937;
     display: none;
     
@@ -337,7 +337,7 @@ body > div:nth-child(2) img{
 footer{
   position: relative;
   bottom: 0;
-  
+ 
 }
 footer > div {
   color: #fff;

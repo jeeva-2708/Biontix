@@ -24,11 +24,9 @@ window.addEventListener('scroll', function() {
 navi.addEventListener("click", ()=>{
     list.style.display="block";
     navi.style.display="none";
+    list.style.height= "100vh"
 })
-navi.addEventListener("click", ()=>{
-    list.style.display="block";
-    navi.style.display="none";
-})
+
 cross.addEventListener("click", ()=>{
     list.style.display="none"
     navi.style.display="block"
