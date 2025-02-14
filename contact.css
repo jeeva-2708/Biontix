@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* background  */
+body{
+    background-color: #000000;
+    font-family: "Flick", sans-serif;
+    color: #FFFFFF;
+    
+}
+@font-face {
+
+    font-family: 'Flick';
+    src: url('./fonts/Flick-Stamp-Demo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+body > div:nth-child(1) > img:nth-child(1){
+    animation: spin 29s linear infinite;
+    z-index: -2;
+    position: fixed;
+    top: 0%;
+    left: -0%;
+    transform: none;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.2;
+    object-fit: contain;
+    will-change: transform;
+  }
+  body >div:nth-child(1)> img:nth-child(2){
+        position: fixed;
+        top: 8%;
+        left: -46%;
+        transition: transform 1s linear;
+        z-index: -1;
+        width: 90vw;
+        height: 90vh;
+        opacity: 0.3;
+        object-fit: contain;
+       
+  }
+  body > div:nth-child(1) > img:nth-child(3){
+    position: fixed;
+    top: -25%;
+    right: -25%;
+    transition: transform 1s linear;
+    z-index: -1;
+    width: 50vw;
+    height: 50vh;
+    opacity: 0.3;
+    object-fit: contain;
+   
+  }
+  body > div:nth-child(1) > img:nth-child(4){
+    position: fixed;
+    bottom: -50%;
+    right: -50%;
+    transition: transform 1s linear;
+    z-index: -1;
+    width: 90vw;
+    height: 90vh;
+    opacity: 0.3;
+    object-fit: contain;
+    
+  }
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* navigation */
+.lines{
+    position: fixed;
+    width: 40%;
+    height: 100vh;
+    z-index: 5;
+    
+}
+
+.lines > div:nth-child(1) > img{
+    position: fixed;
+    width: 40px;
+    margin: 15px 10px;
+}
+
+.lines > div:nth-child(2){
+    width: 100%;
+    height: inherit;
+    background-color: #1F2937;
+    display: none;
+}
+.lines > div:nth-child(2) > nav > ul{
+    color: #ffffff;
+    font-family: "Inter", serif;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+.lines > div:nth-child(2) > nav > ul > li{
+    list-style: none;
+}
+.lines > div:nth-child(2) > nav > ul > li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.lines >  div:nth-child(2) > nav > ul > li a:hover{
+    border: 2px solid #374151 ;
+    background-color: #374151;
+    border-radius: 5px;
+}
+#cross{
+  width: 55px;
+}
+
+/* staff starts */
+.staff > h3,
+.student > h3{
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+.staff > div {
+  gap: 70px;
+}
+
+.staff > div > div{
+    padding: 16px;
+    width: 348px;
+    height: 98px;
+    border: 1px solid #FFFFFF;
+    border-radius: 16px;
+    font-family: "Tomorrow";
+    box-shadow: 0 0 7px 5px rgba(251, 186, 51, 40%);
+    background-color: rgba(0, 0, 0, 50.2%);
+}
+.staff > div > div > p,
+.student > div > div > p{
+    font-size: 16px;
+}
+.student > h3{
+    margin: 50px 0;
+}
+
+.student > div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 30px 70px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.student > div > div{
+  border: 1px solid #FFFFFF;
+  border-radius: 16px;
+  font-family: "Tomorrow";
+  box-shadow: 0 0 7px 5px rgba(251, 186, 51, 40%);
+  background-color: rgba(0, 0, 0, 50.2%);
+  width: 348px;
+    height: 98px;
+  padding: 16px;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) { 
+    .lines{
+      width: 20%;  
+    }
+    .lines > div > nav > ul{
+      font-size: 1rem;
+    }
+    .student > div {
+      
+      grid-template-columns: auto auto;
+    }
+
+
+
+    footer > div > div:nth-child(1) > h3{
+      font-size: 24px;
+    }
+    footer > div > div:nth-child(2) > a > i{
+    font-size: 30px;
+    }
+    footer > div > div:nth-child(1) > img{
+      width: 140px !important;
+    }
+  }
+
+
+/* footer starts */
+footer{
+  position: relative;
+  bottom: 0;
+}
+footer > div {
+  color: #fff;
+}
+footer > div > div:nth-child(1) > a > img{
+  border-right: 1px solid #ffffff ;
+  margin-right: 10px;
+  width: 70px;
+}
+footer > div > div:nth-child(1) > h3{
+  font-family: "Georgia", sans-serif;
+  font-size: 10px;
+  margin-bottom: 0;
+ 
+}
+footer > div > div:nth-child(2) > a > i{
+  font-size: 15px;
+  display: inline-block;
+  color: #FFFFFF;
+}
+
+footer > div > div:nth-child(2) > a:visited {
+  color: #ffffff;
+}

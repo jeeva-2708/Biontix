@@ -37,3 +37,4 @@ cross.addEventListener("click", ()=>{
 //      list.style.display="none"
 //     navi.style.display="block"
 // })
+AOS.init();

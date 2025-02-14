@@ -4,6 +4,9 @@ const cross = document.getElementById("cross");
 const sec = document.getElementById("sec");
 const times = document.querySelectorAll(".times");
 
+
+
+
 window.addEventListener('scroll', function() {
     const image = document.querySelectorAll('.img1');
     const scrollPosition = window.scrollY;
@@ -31,9 +34,12 @@ sec.addEventListener("click", ()=>{
 })
 
 // time
+
+// const targetDate = new Date('2025-02-02T24:59:59'); // Set your target date here
+// const now = new Date();
 function updateTime() {
    
-    const targetDate = new Date('2025-01-20T23:59:59'); // Set your target date here
+    const targetDate = new Date('2025-03-01T23:59:59'); // Set your target date here
     const now = new Date();
     const timeDifference = targetDate - now;
 
@@ -42,28 +48,36 @@ function updateTime() {
     const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
     const timeArr = [days, hours, minutes, seconds]
-    for(let i=0 ; i< times.length; i++){
-        times[i].textContent = timeArr[i]
+   
+    for(let i=0 ; i< timeArr.length; i++){
+    if(timeArr[i] > '0'){
+        for(let i=0 ; i< times.length; i++){
+            times[i].textContent = timeArr[i]
+        }
     }
-    for(let i=0 ; i< times.length; i++){
-    if(times[i].textContent < '0'){
-        times[i].textContent =  '0'
-    }
-
 }
 }
 setInterval(updateTime, 1000);
 updateTime()
-
-for(let i=0 ; i< times.length; i++){
-    if(times[i].textContent == '-1'){
-        times[i].textContent = "0"
-    }
-    else{
+// if(targetDate !== now){
+//    times[i].textContent =  '0'
+// }
+// else{
+    
+       
         
-    }
-}
+//         console.log("hi")
+
+//  }
+// for(let i=0 ; i< times.length; i++){
+//     if(times[i].textContent == '-1'){
+//         times[i].textContent = "0"
+//     }
+//     else{
+        
+//     }
+// }
     
-    
+AOS.init();
    
    
