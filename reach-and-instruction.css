@@ -148,15 +148,15 @@ section > div > div > ol > li{
   .lines > div:nth-child(2) > nav > ul{
     font-size: 16px !important;
   }
-    footer > div > div:nth-child(1) > h3{
-      font-size: 24px;
-    }
-    footer > div > div:nth-child(2) > a > i{
-    font-size: 30px;
-    }
-    footer > div > div:nth-child(1) > img{
-      width: 140px !important;
-    }
+  footer > div > div:nth-child(1) > h3{
+    font-size: 14px !important;
+  }
+  footer > div > div:nth-child(2) > a > i{
+  font-size: 18px !important;
+  }
+  footer > div > div:nth-child(1) > a > img{
+    width: 100px !important;
+  }
   }
 
 
