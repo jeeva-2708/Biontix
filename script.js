@@ -40,7 +40,7 @@ sec.addEventListener("click", ()=>{
 // const now = new Date();
 function updateTime() {
    
-    const targetDate = new Date('2025-03-01T23:59:59'); // Set your target date here
+    const targetDate = new Date('2025-03-19T23:59:59'); // Set your target date here
     const now = new Date();
     const timeDifference = targetDate - now;
 
