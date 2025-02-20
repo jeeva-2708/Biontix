@@ -164,6 +164,11 @@ body > div:nth-child(3) > div > div > img{
 /* #over-one{
     transition: font-size 0.5s linear;
 } */
+ #box-two > img,
+ #box-one > img{
+  border-radius: 20px;
+  box-shadow: 0 0 10px #FFFFFF;
+ }
 
 @media screen and (min-width: 768px) {
     .lines{
