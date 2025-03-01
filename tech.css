@@ -131,7 +131,11 @@ body > div:nth-child(3) > div > a > img{
     width: 300px;
     height: 425px;
 }
-
+.border{
+  
+  border-radius: 20px;
+  box-shadow: 0 0 20px #FFFFFF;
+}
 
 
 @media screen and (min-width: 768px) {
