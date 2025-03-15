@@ -121,20 +121,27 @@ body > div:nth-child(1) > img:nth-child(1){
   width: 55px;
 }
 
-.reach-us{
-    height: 100vh;
+.reach-us > div{
+  margin: 50px 0;
 }
 .reach-us > div > div{
     width: 100%;
     border: 1px solid #FFFFFF;
     border-radius: 16px;
-    font-family: "Tomorrow";
+    font-family: "Inter", serif;
     box-shadow: 0 0 7px 5px rgba(251, 186, 51, 40%);
     background-color: rgba(0, 0, 0, 50.2%);
     padding: 20px;
 }
 section > div > div > ol > li{
   font-size: 20px;
+}
+section > div > div > p{
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+section > div > div > h4{
+  margin-bottom: 30px;
 }
 
 
